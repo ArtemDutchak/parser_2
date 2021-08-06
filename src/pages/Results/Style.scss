@@ -1,0 +1,177 @@
+@import '../../styles/app';
+
+.error-page {
+  padding-top: 5%;
+  background-color: $body-bg;
+  height: 100%;
+
+  .errorContainer {
+    width: 365px;
+    text-align: center;
+  }
+
+  .errorBtn {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .la-search {
+      color: var(--light-color);
+    }
+  }
+
+  .errorCode {
+    margin: 20px;
+    font-size: 80px;
+    font-weight: $font-weight-normal;
+    color: $primary;
+
+    @include media-breakpoint-up(md) {
+      font-size: 180px;
+    }
+  }
+
+  .errorInfo {
+    font-size: 20px;
+    color: $gray-800;
+  }
+
+  .errorHelp {
+    font-size: 14px;
+  }
+
+  .pageFooter {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: $font-size-mini;
+    color: $text-muted;
+    text-align: center;
+  }
+}
+
+.product-images{
+  display: flex;
+  .product-image{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.product-info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+.product-info-btns{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.product-info-btns .btn{
+  background-color: transparent;
+}
+.product-info-blocks{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.product-info-block{
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.product-info-block:first-child{
+  padding-top: 0;
+}
+.product-info-id{
+  font-size: 12px
+}
+.product-info-name{
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.product-footer{
+  padding-top: 5px;
+  display: flex;
+}
+.product-stat{
+  display: flex;
+  align-items: center;
+}
+.product-stat h4{
+  min-width: 80px;
+  text-align: right;
+}
+.f-max{
+  flex: 1;
+}
+
+.table .form-control-sm {
+  height: 100%;
+  padding: 0.12rem 0;
+  border-style: none none solid none;
+  border-radius: 0;
+  background-color: transparent;
+}
+.table tr.marked td{
+  font-weight: 600;
+}
+.table tr.success td{
+  color: #21AE8C;
+}
+.table tr.danger td{
+  color: #DC3545;
+}
+.table tr.warning td{
+  color: #FDA700;
+}
+
+.page-item.active .page-link{
+  background-color: #007bff !important;
+  color: white !important;
+}
+.page-item span{
+  text-align: center;
+}
+.page-item button,
+.page-item span{
+  min-width: 40px;
+}
+
+#page_back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #51515151;
+  opacity: 0;
+  z-index: 900;
+  pointer-events: none;
+  transition: opacity .3s ease-in-out;
+}
+#page_back.show{
+  pointer-events: all;
+  opacity: 1;
+}
+
+#collapse_filters,
+#collapse_selected{
+  position: absolute;
+  top: 78px;
+  left: 40px;
+  right: 40px;
+  background-color: white;
+  z-index: 999;
+  border-radius: 7px
+}

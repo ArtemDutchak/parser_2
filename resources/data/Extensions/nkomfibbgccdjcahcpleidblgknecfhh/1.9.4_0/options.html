@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free VPN | Options</title>
+    <link rel="stylesheet" href="/lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/options.css">
+    <style></style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+            <ul id="menu">
+                <li class="waves-effect" data-tab="settings">Settings</li>
+                <li class="waves-effect" data-tab="donation">Donation</li>
+                <li class="waves-effect" data-tab="about">About Us</li>
+                <li class="waves-effect" data-tab="contact">Contact Us</li>
+            </ul>
+        </aside>
+        <div id="tabs">
+            <section class="tab" id="settings">
+                <div class="option">
+                    <div class="title">
+                        <span>Safe Browsing</span>
+                        <div class="tooltip"></div>
+                    </div>
+                    <div class="values">
+                        <div class="switch">
+                            <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                            </label>
+                        </div>
+                        <!-- <input type="checkbox" name="" id=""> -->
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="title">
+                        <span>Check Errors</span>
+                        <div class="tooltip"></div>
+                    </div>
+                    <div class="values">
+                        <button>Check</button>
+                    </div>
+                </div>
+            </section>
+            <section class="tab" id="donation">
+                Donation
+            </section>
+            <section class="tab" id="about">
+                about
+            </section>
+            <section class="tab" id="contact">
+                contact
+            </section>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/lib/materialize/js/materialize.min.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/options.js"></script>
+</body>
+
+</html>

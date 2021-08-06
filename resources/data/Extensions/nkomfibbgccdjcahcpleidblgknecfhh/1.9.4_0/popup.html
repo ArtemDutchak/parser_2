@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free VPN</title>
+    <link rel="stylesheet" href="/lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/hamburgers/hamburgers.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <style></style>
+</head>
+
+<body>
+  <div id="settings" class="">
+    <div class="header">
+      <div class="top-area">
+        <div class="back-btn waves-effect waves-light">
+          <img src="./img/arrow.png" alt="">
+        </div>
+
+        <div class="label">Settings</div>
+      </div>
+    </div>
+    <div class="list">
+      <div class="list-item">
+        <div class="label">
+          <img src="./img/settings-icon1.png" alt="">
+          <div class="title">Safe Browsing</div>
+        </div>
+        <div class="values">
+          <div class="switch">
+            <label>
+              <input id="safe_browsing_input" type="checkbox">
+              <span class="lever"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="label">
+          <img src="./img/settings-icon2.png" alt="">
+          <div class="title">Check Errors</div>
+        </div>
+        <div class="values">
+          <button class="disabled">Check</button>
+        </div>
+      </div>
+
+
+      <a href="mailto:support@freevpn.zone" target="_blank" class="list-item waves-effect">
+        <div class="label">
+          <img src="./img/settings-icon3.png" alt="">
+          <div class="title">Contact Us</div>
+        </div>
+        <div class="values">
+          <img class="arrow" src="./img/next.svg" alt="">
+        </div>
+      </a>
+
+
+      <!-- <a href="https://chrome.google.com/webstore/detail/free-vpn-the-fastest-vpn/ogojkdkkcopeepagdlddbninobfhfbcb" target="_blank" class="list-item waves-effect">
+        <div class="label">
+          <img src="./img/settings-icon4.png" alt="">
+          <div class="title">Rate Us</div>
+        </div>
+        <div class="values">
+          <img class="arrow" src="./img/next.svg" alt="">
+        </div>
+      </a> -->
+
+
+    </div>
+  </div>
+  <div id="gsb" class="">
+    <div class="header">
+      <div class="top-area">
+        <div class="back-btn waves-effect waves-light">
+          <img src="./img/arrow.png" alt="">
+        </div>
+        
+        <div class="label">Safe Browsing (Based on <a href="https://developers.google.com/safe-browsing/" target="_blank">GSB</a>)</div>
+      </div>
+      <div class="site-wrap">
+        <div class="favicon"></div>
+        <div class="url"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="list unsafe">
+        <input type="checkbox" id="checkbox_unsafe_links">
+        <label for="checkbox_unsafe_links" class="collapse-btn list-item waves-effect">
+          <div class="title">Unsafe Links (<span>0</span>)</div>
+          <div class="arrow">
+            <img src="./img/next.svg" alt="">
+          </div>
+        </label>
+        <div class="items">
+          <!-- <div class="list-item link">
+            <div class="icon">
+              <img src="./img/error.svg" alt="">
+            </div>
+            <div class="url">https://stackoverflow.com/questions/2194992/jquery-is-not-defined</div>
+            <div class="info waves-effect">
+              <img src="./img/info.svg" alt="">
+            </div>
+          </div>
+          <div class="list-item link">
+            <div class="icon">
+              <img src="./img/error.svg" alt="">
+            </div>
+            <div class="url">https://stackoverflow.com/questions/2194992/jquery-is-not-defined</div>
+            <div class="info waves-effect">
+              <img src="./img/info.svg" alt="">
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="list safe">
+        <input type="checkbox" id="checkbox_safe_links">
+        <label for="checkbox_safe_links" class="collapse-btn list-item waves-effect">
+          <div class="title">Safe Links (<span>0</span>)</div>
+          <div class="arrow">
+            <img src="./img/next.svg" alt="">
+          </div>
+        </label>
+        <div class="items">
+
+          <!-- <div class="list-item link">
+             <div class="icon">
+               <img src="./img/verified.svg" alt="">
+             </div>
+            <div class="url">https://dsadsadasdasdas</div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="wrapper">
+    <header>
+      <div class="nav">
+        <div class="burger-menu">
+          <!-- <input class="checkbox-toggle" type="checkbox" id="open_hamburger" />
+          <label for="open_hamburger" class="hamburger">
+            <div></div>
+          </label> -->
+          <input class="checkbox-toggle" type="checkbox" id="open_hamburger" />
+          <label for="open_hamburger" class="hamburger hamburger--spin js-hamburger">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </label>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><div class="open-countries-dropdown-btn">Change Location</div></li>
+                  <li><div class="open-gsb-dropdown-btn">Safe Browsing</div></li>
+                  <li><div class="open-settings-dropdown-btn">Settings</div></li>
+                  <li><a target="_blank" href="https://freevpn.zone/donate/">Donate</a></li>
+                  <li><a target="_blank" id="rate_us_link" href="https://chrome.google.com/webstore/detail/free-vpn-the-fastest-vpn/nkomfibbgccdjcahcpleidblgknecfhh/reviews">Rate Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- <button class="open-settings-dropdown-btn waves-effect waves-light">
+          <img src="./img/menu.svg" alt="">
+        </button>
+        <div class="right-btns">
+          <button class="open-countries-dropdown-btn waves-effect waves-light">
+            <img src="./img/change-location.png" alt="">
+          </button>
+          <button class="open-gsb-dropdown-btn waves-effect waves-light">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+              <g>
+                <g>
+                  <path fill="#00b0ff"
+                    d="M32.5,0C14.58,0,0,14.579,0,32.5S14.58,65,32.5,65S65,50.421,65,32.5S50.42,0,32.5,0z M32.5,61C16.785,61,4,48.215,4,32.5
+			S16.785,4,32.5,4S61,16.785,61,32.5S48.215,61,32.5,61z" />
+                  <circle fill="#00b0ff" cx="33.018" cy="19.541" r="3.345" />
+                  <path fill="#00b0ff" d="M32.137,28.342c-1.104,0-2,0.896-2,2v17c0,1.104,0.896,2,2,2s2-0.896,2-2v-17C34.137,29.237,33.241,28.342,32.137,28.342z
+			" />
+                </g>
+              </g>
+            </svg>
+          </button>
+
+        </div> -->
+
+
+      </div>
+    </header>
+
+    <main>
+
+      <div class="connection_info">
+        <div class="flag open-countries-dropdown-btn">
+          <img id="flag_icon" src="./img/flags/CA.svg" alt="">
+        </div>
+        <div class="connecting connection-label">Connecting
+          <span class="dot-loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+        </div>
+        <div class="connected connection-label">Connected</div>
+        <div id="error_text" class="connection-label error">Error</div>
+        <div id="ip_info">
+          <div class="region"></div>
+          <div class="ip"></div>
+        </div>
+      </div>
+      <div class="connect_btn_holder">
+        <label class="on_off_btn">
+          <input id="vpn-on" type="checkbox" class="x-checkbox-input">
+        </label>
+
+        <!-- <button id="connect-btn">Connect</button> -->
+        <div class="info">
+          <div class="wrap">
+            <h3>
+              Location:
+            </h3>
+            <div class="country undefined" id="location">
+              <img src="" alt="">
+              <span>Unknown</span>
+            </div>
+            <h3>
+              Last Connection:
+            </h3>
+            <div class="country" id="prev_country">
+              <img src="./img/flags/DE.svg" alt="">
+              <span>Germany</span>
+            </div>
+            <h3>
+              Current Connection:
+            </h3>
+            <div class="country" id="next_connect">
+              <img src="./img/flags/CA.svg" alt="">
+              <span>Canada</span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div id="country-select" class="x-select-box">
+            <!-- <div class="x-select-view"></div> -->
+            <div id="countries-dropdown" class="x-select-dropdown">
+                <div class="col s12 header">
+                  <div class="top-area">
+                    <div class="back-btn waves-effect waves-light">
+                      <img src="./img/arrow.png" alt="">
+                    </div>
+                    <div class="label">Servers</div>
+                  </div>
+                  <ul class="tabs">
+                    <li class="tab col s3"><a class="active waves-effect waves-light" href="#servers">Free</a></li>
+                    <li class="tab col s3"><a class="waves-effect waves-light" href="#favorite">Favorite</a></li>
+                    <li class="tab col s3"><a class="waves-effect waves-light" href="#qrcode">Android</a></li>
+                  </ul>
+                </div>
+                <div id="servers" class="tab-page col s12">
+                  <div class="navigation">
+                    <div class="input-wrap">
+                      <input id="search_country" type="text" placeholder="Search">
+                      <svg width="13px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                        <g>
+                          <path stroke="#d0d0d0"
+                            d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="countries"></div>
+
+                </div>
+                <div id="favorite" class="tab-page col s12">
+                  <div class="countries"></div>
+                </div>
+                <div id="qrcode" class="tab-page col s12">
+                  <h2>Get Free VPN for Android</h2>
+                  <img src="./img/free-vpn-qr-code.png" alt="">
+                  <ol>
+                    <li>Launch camera app</li>
+                    <li>Point camera into the QR Code</li>
+                    <li>Install Free VPN</li>
+                  </ol>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+  </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/lib/materialize/js/materialize.min.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/x-select.js"></script>
+    <script src="/js/gsb.js"></script>
+    <script src="/js/popup.js"></script>
+</body>
+
+</html>

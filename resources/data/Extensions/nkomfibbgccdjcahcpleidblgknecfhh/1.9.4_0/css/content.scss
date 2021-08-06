@@ -1,0 +1,98 @@
+#free_vpn_container{
+    display: none;
+    font-family: "Lato", sans-serif;
+
+    &.free-vpn_open {
+        display: block;
+    }
+
+    .free-vpn_wrap {
+        position: fixed;
+        z-index: 10000;
+        top: 0px; left: 0px; right: 0px; bottom: 0px;
+        background: rgba(0, 0, 0, 0.226);
+        display: flex; align-items: center; justify-content: center;
+
+        
+
+        .free-vpn_rate-popup {
+            display: flex; flex-direction: column;
+            align-items: center;
+            background: url('chrome-extension://__MSG_@@extension_id__/img/bg-popup.png');
+            color: white;
+            border-radius: 40px;
+            padding-bottom: 30px;
+            box-sizing: content-box;
+            width: 500px;
+            height: 335px;
+            position: relative;
+
+            .free-vpn_close-btn {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                cursor: pointer;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            .free-vpn_logo {
+                background: url('chrome-extension://__MSG_@@extension_id__/img/512.png') no-repeat center center;
+                background-size: contain;
+                flex-shrink: 0;
+
+                margin-top: 30px;
+                height: 100px;
+                width: 100px;
+            }
+
+            .free-vpn_title {
+                font-family: "Lato", sans-serif;
+                margin-top: 10px;
+                font-size: 30px;
+                line-height: normal;
+            }
+
+            .free-vpn_text {
+                font-family: "Lato", sans-serif;
+                margin-top: 20px;
+                text-align: center;
+
+                font-size: 28px;
+                font-weight: 300;
+                line-height: 27px;
+            }
+
+            .free-vpn_stars {
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 5px;
+                }
+            }
+
+            .free-vpn_rate-btn {
+                margin-top: 15px;
+                color: white;
+                font-size: 14px;
+                background: #ff9b1a;
+                border: none;
+                border-radius: 6px;
+                padding: 12px 0;
+                line-height: normal;
+                display: block;
+                width: 150px;
+                text-align: center;
+                border-bottom: 2px solid #cf7b0f;
+                text-decoration: none;
+            }
+        }
+    }
+}

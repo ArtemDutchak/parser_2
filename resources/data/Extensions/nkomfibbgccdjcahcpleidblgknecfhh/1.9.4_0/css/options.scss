@@ -1,0 +1,101 @@
+body, html{
+    margin: 0;
+    height: 100%;
+}
+
+$padding-top: 50px;
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    aside{
+        width: 270px;
+        background: white;
+        padding: 0 $padding-top;
+        padding-top: $padding-top;
+        ul{
+            padding: 0; margin: 0;
+            display: flex; flex-direction: column;
+            align-items: center;
+            li{
+                width: 180px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 12px;
+                padding: 12px 0;
+
+                &.open{
+                    background: #f0f0f0;
+                }
+
+                &:hover{
+
+                }
+            }
+        }
+    }
+
+    #tabs{
+        height: 100%;
+        flex-grow: 1;
+        background: url(/img/bg-right.png) no-repeat;
+        background-size: cover;
+        padding-top: $padding-top;
+        display: flex; justify-content: center;
+
+        .tab{
+            color: white;
+            display: none;
+            width: 600px;
+            flex-direction: column;
+
+            &.open{
+                display: flex;
+            }
+
+            .option{
+                display: flex; justify-content: space-between; align-items: center;
+                background: #323232;
+                margin-bottom: 1px;
+                padding: 0px 30px;
+                height: 55px;
+                font-size: 14px;
+                font-weight: 300;
+
+                button{
+                    font-size: 12px;
+                    background: #0e68ef;
+                    color: white;
+                    border: none;
+                    width: 80px;
+                    padding: 7px 0;
+                    cursor: pointer;
+                }
+
+                .switch{
+                    .lever{
+                        background: #c9c9c9;
+                        margin: 0;
+                        height: 12px;
+
+                        &:after{
+                            background: #858585;
+                            top: -4px;
+
+                        }
+                        &:before{
+                            background: #0e68ef1c;
+                        }
+                    }
+
+                    input[type="checkbox"]:checked + .lever{
+                        background: #c9c9c9;
+                        &:after {
+                            background: #0e68ef;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../styles/app';
+
+.dashboard-page {
+  .requests-table {
+    td, th {
+      font-weight: $font-weight-normal;
+    }
+
+    tbody tr {
+      td {
+        min-width: 100px;
+      }
+    }
+  }
+
+  .visitElement {
+    max-width: 50%;
+    width: 33%;
+    min-width: 65px;
+  }
+
+  .table .form-control-sm {
+    height: 100%;
+    padding: 0.12rem 0;
+    border-style: none none solid none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .table.v-center th,
+  .table.v-center td{
+    vertical-align: middle;
+  }
+
+  .table td.h-center{
+    text-align: center;
+  }
+
+}

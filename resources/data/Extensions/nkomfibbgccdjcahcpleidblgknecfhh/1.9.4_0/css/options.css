@@ -1,0 +1,90 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+}
+.wrapper aside {
+  width: 270px;
+  background: white;
+  padding: 0 50px;
+  padding-top: 50px;
+}
+.wrapper aside ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper aside ul li {
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 12px 0;
+}
+.wrapper aside ul li.open {
+  background: #f0f0f0;
+}
+.wrapper #tabs {
+  height: 100%;
+  flex-grow: 1;
+  background: url(/img/bg-right.png) no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper #tabs .tab {
+  color: white;
+  display: none;
+  width: 600px;
+  flex-direction: column;
+}
+.wrapper #tabs .tab.open {
+  display: flex;
+}
+.wrapper #tabs .tab .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #323232;
+  margin-bottom: 1px;
+  padding: 0px 30px;
+  height: 55px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.wrapper #tabs .tab .option button {
+  font-size: 12px;
+  background: #0e68ef;
+  color: white;
+  border: none;
+  width: 80px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.wrapper #tabs .tab .option .switch .lever {
+  background: #c9c9c9;
+  margin: 0;
+  height: 12px;
+}
+.wrapper #tabs .tab .option .switch .lever:after {
+  background: #858585;
+  top: -4px;
+}
+.wrapper #tabs .tab .option .switch .lever:before {
+  background: #0e68ef1c;
+}
+.wrapper #tabs .tab .option .switch input[type=checkbox]:checked + .lever {
+  background: #c9c9c9;
+}
+.wrapper #tabs .tab .option .switch input[type=checkbox]:checked + .lever:after {
+  background: #0e68ef;
+}
+
+/*# sourceMappingURL=options.css.map */

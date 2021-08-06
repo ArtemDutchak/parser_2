@@ -1,0 +1,1 @@
+const lang=chrome.i18n.getUILanguage().split("-");chrome.runtime.onMessage.addListener(a=>{a.pp_action&&ga("send","event","ReviewsPopup",a.pp_action,"")});

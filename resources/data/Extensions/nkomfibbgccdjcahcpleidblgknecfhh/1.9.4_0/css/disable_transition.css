@@ -1,0 +1,14 @@
+.connect_btn_holder {
+    transition: none !important;
+}
+.connect_btn_holder .info {
+    transition: none !important;
+}
+
+.connection_info .flag{
+    transition: none !important;
+}
+
+.on_off_btn{
+    transition: none !important;
+}
