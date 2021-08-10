@@ -1,7 +1,7 @@
 module.exports = {
   mail:{
     host: '',
-    port: 465,
+    port: 0,
     secure: true,
     user: '',
     pass: ''
