@@ -1,10 +1,10 @@
 module.exports = {
   mail:{
-    host: 'n3plcpnl0280.prod.ams3.secureserver.net',
+    host: '',
     port: 465,
     secure: true,
-    user: 'watcher@parser.landingservice.site',
-    pass: '74QpmJY5lHQ9'
+    user: '',
+    pass: ''
   },
   window:{
     width: 1280,
