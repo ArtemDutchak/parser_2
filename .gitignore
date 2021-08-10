@@ -4,6 +4,7 @@ dist/
 helpers
 
 # local env files
+ modules/env.js
 .env.local
 .env.*.local
 
